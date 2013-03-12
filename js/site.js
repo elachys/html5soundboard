@@ -18,8 +18,7 @@ var app = {
     },
     events: function(){
         $('li').live('click', function(){
-
-            console.log(this);
+            app.playAudio('audio/' + $(this).data('audio'));
         });
     },
     playAudio: function(file){
